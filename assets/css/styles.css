@@ -133,7 +133,7 @@ and (orientation : portrait) {
 }
 
 .logo {
-  z-index: 1;
+  z-index: 100;
   position: absolute;
   top: 16.66%
 }
