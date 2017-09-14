@@ -1,6 +1,8 @@
 body, html {
     height: 100%;
     margin: 0;
+    max-width: 100%;
+    overflow-x: hidden;
 }
 
 .bg-image {
@@ -45,8 +47,6 @@ h1 {
   font-size: 45px;
 }
 
-
-
 hr {
   margin: auto;
   width: 50%
@@ -61,24 +61,82 @@ hr {
   margin-top: 35px;
 }
 
+@media (max-width: 570px) {
+  .callout #timer {
+    font-size: 30px;
+  }
+
+  .date h2 {
+    font-size: 28px;
+  }
+  .middle h1 {
+    font-size: 37px;
+  }
+}
+/*566 px, 390px*/
+@media (max-width: 480px) {
+  .callout #timer {
+    font-size: 25px;
+    margin-top: 25px;
+  }
+  .date h2 {
+    font-size: 24px;
+    margin-top: -10px
+  }
+  .middle h1 {
+    font-size: 35px;
+  }
+}
+
+@media only screen
+and (min-device-width : 320px)
+and (max-device-width : 568px)
+and (orientation : portrait) {
+  .callout #timer {
+    font-size: 20px;
+    margin-top: 20px;
+  }
+
+}
+
+@media only screen
+and (min-device-width : 375px)
+and (max-device-width : 667px)
+and (orientation : portrait) {
+  .callout #timer {
+    font-size: 23px;
+    margin-top: 20px;
+  }
+  .middle h1 {
+    font-size: 33px;
+  }
+  .date h2 {
+    margin-top: -35px;
+  }
+
+}
+
+
+
 .box-wrapper {
+  position: absolute;
+  transform: translate(-50%, -50%);
   top: 50%;
+  left: 50%;
 
 }
 
 .logo {
   z-index: 1;
   position: absolute;
-  top: 33%;
-  left: 38.3%;
+  top: 16.66%
 }
 
 /*2nd Box Type Code*/
 
 #box {
-  position: absolute;
-  top: 25%;
-  left: 38.3%;
+
+
   width: 300px;
   height: 300px;
   border: none;
