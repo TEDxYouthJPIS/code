@@ -98,7 +98,7 @@ and (orientation : portrait) {
   }
 
 }
-
+/*iPhone 6*/
 @media only screen
 and (min-device-width : 375px)
 and (max-device-width : 667px)
@@ -112,6 +112,12 @@ and (orientation : portrait) {
   }
   .date h2 {
     margin-top: -35px;
+  }
+  .box-wrapper .logo {
+    transition: 0.4s ease;
+    transition-duration: 500ms;
+    opacity: 0;
+
   }
 
 }
