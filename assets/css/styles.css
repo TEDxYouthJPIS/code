@@ -133,13 +133,9 @@ and (orientation : portrait) {
 }
 
 .box-wrapper .logo {
-
+  z-index: 4 !important;
   position: absolute;
-  top: 16.66%
-}
-
-.logo img {
-  z-index: 9999 !important;
+  top: 26%
 }
 
 /*2nd Box Type Code*/
@@ -161,7 +157,7 @@ and (orientation : portrait) {
   border: none;
   width: 150px;
   height: 300px;
-  z-index: 1;
+  z-index: 2;
   transform: translateZ(1px);
   transform-origin: 0 0;
   transition: transform 1s 1.5s;
@@ -172,7 +168,7 @@ and (orientation : portrait) {
   border: none;
   width: 150px;
   height: 300px;
-  z-index: 1;
+  z-index: 2;
   transform: translateZ(1px);
   transform-origin: 100% 0;
   transition: transform 1s ease 1s;
@@ -181,7 +177,7 @@ and (orientation : portrait) {
   background-color: white;
   width: 300px;
   height: 150px;
-  z-index: 2;
+  z-index: 3;
   transform-origin: 0 0;
   transition: transform 1s ease 0.5s;
 }
@@ -190,7 +186,7 @@ and (orientation : portrait) {
   top: 150px;
   width: 300px;
   height: 150px;
-  z-index: 2;
+  z-index: 3;
   transform-origin: 0 100%;
   transition: transform 1s ease;
 }
